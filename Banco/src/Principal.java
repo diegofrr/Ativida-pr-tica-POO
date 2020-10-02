@@ -25,10 +25,8 @@ public class Principal {
 				int numeroAgencia = Integer.parseInt(JOptionPane.showInputDialog("DIGITE O NÚMERO DA AGÊNCIA"));
 				for (Agencia agencia : sistemaBanco.listaAgencias) {
 					if (agencia.numeroAgencia() == numeroAgencia) {
-						boolean criou = agencia.novaConta(agencia);
-						if (criou) {
-							JOptionPane.showMessageDialog(null, "CONTA CRIADA!");
-						}
+						String criou = agencia.novaConta(agencia);
+						JOptionPane.showMessageDialog(null, criou);
 
 					} else {
 						JOptionPane.showMessageDialog(null, "AGÊNCIA NÃO EXISTE! TENTE NOVAMENTE");
@@ -41,16 +39,18 @@ public class Principal {
 			else if (opcao == 2) {
 
 				int numeroAgencia = Integer.parseInt(JOptionPane.showInputDialog("NÚMERO DA AGÊNCIA A LISTAR CONTAS"));
+				boolean agenciaExiste = false;;
 				for (Agencia agencia : sistemaBanco.listaAgencias) {
 					if (agencia.numeroAgencia() == numeroAgencia) {
-
 						JOptionPane.showMessageDialog(null, agencia.listarContas());
-
-					} else {
-						JOptionPane.showMessageDialog(null, "AGÊNCIA NÃO EXISTE! TENTE NOVAMENTE");
-					}
-
+						agenciaExiste = true;
+					} 
+					
 				}
+				if(!agenciaExiste) {
+					JOptionPane.showMessageDialog(null, "AGÊNCIA NÃO EXISTE! TENTE NOVAMENTE");
+				}
+
 
 			} else if (opcao == 3) {
 				JOptionPane.showMessageDialog(null, sistemaBanco.listarAgencias());
@@ -61,7 +61,7 @@ public class Principal {
 				for (Agencia agencia : sistemaBanco.listaAgencias) {
 					if (agencia.numeroAgencia() == numeroAgencia) {
 
-						int numeroConta = Integer.parseInt(JOptionPane.showInputDialog("NÚMERO DA CONTA"));
+						String numeroConta = JOptionPane.showInputDialog("NÚMERO DA CONTA");
 						boolean contaEncontrada = agencia.procurarConta(numeroConta);
 						Conta contaDepositar = agencia.pegarConta(numeroConta);
 						if (contaEncontrada) {
@@ -71,7 +71,7 @@ public class Principal {
 							JOptionPane.showMessageDialog(null, "VALOR DEPOSITADO COM SUCESSO");
 
 						} else {
-							JOptionPane.showInputDialog("CONTA NÃO ENCONTRADA. TENTE NOVAMENTE");
+							JOptionPane.showMessageDialog(null,"CONTA NÃO ENCONTRADA. TENTE NOVAMENTE");
 						}
 
 					} else {
@@ -88,7 +88,7 @@ public class Principal {
 				for (Agencia agencia : sistemaBanco.listaAgencias) {
 					if (agencia.numeroAgencia() == numeroAgencia) {
 
-						int numeroConta = Integer.parseInt(JOptionPane.showInputDialog("NÚMERO DA CONTA"));
+						String numeroConta = JOptionPane.showInputDialog("NÚMERO DA CONTA");
 						boolean contaEncontrada = agencia.procurarConta(numeroConta);
 						Conta contaSacar = agencia.pegarConta(numeroConta);
 						if (contaEncontrada) {
@@ -101,7 +101,7 @@ public class Principal {
 							}
 
 						} else {
-							JOptionPane.showInputDialog("CONTA NÃO ENCONTRADA. TENTE NOVAMENTE");
+							JOptionPane.showMessageDialog(null,"CONTA NÃO ENCONTRADA. TENTE NOVAMENTE");
 						}
 
 					} else {
@@ -110,19 +110,18 @@ public class Principal {
 
 				}
 
-			}else if(opcao == 8) {
+			}else if(opcao == 6) {
 				
 				int numeroAgencia = Integer.parseInt(JOptionPane.showInputDialog("NÚMERO DA AGÊNCIA A LISTAR CONTAS"));
 				for (Agencia agencia : sistemaBanco.listaAgencias) {
 					if (agencia.numeroAgencia() == numeroAgencia) {
 
-						int numeroConta = Integer.parseInt(JOptionPane.showInputDialog("NÚMERO DA CONTA"));
+						String numeroConta = JOptionPane.showInputDialog("NÚMERO DA CONTA");
 						boolean contaEncontrada = agencia.procurarConta(numeroConta);
 						Conta contaExcluir = agencia.pegarConta(numeroConta);
 						if (contaEncontrada) {
 							agencia.excluirConta(numeroConta);
 							JOptionPane.showMessageDialog(null, "CONTA EXLCUIDA COM SUCESSO!");
-						
 						
 
 						} else {
