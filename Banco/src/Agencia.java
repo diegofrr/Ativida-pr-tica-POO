@@ -12,11 +12,6 @@ public class Agencia extends Banco {
 		numeroAgencia = n_numero;
 	}
 
-	public boolean novoCliente() {
-
-		return true;
-	}
-
 	public String novaConta(Agencia agencia) {
 		String nome = JOptionPane.showInputDialog("NOME");
 		String cpf = JOptionPane.showInputDialog("CPF");
