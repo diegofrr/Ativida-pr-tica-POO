@@ -4,11 +4,11 @@ import javax.swing.JOptionPane;
 
 public class Cliente {
 	
-	String nome;
-	String cpf;
-	String nascimento;
-	Conta conta;
-	Agencia agencia;
+	private String nome;
+	private String cpf;
+	private String nascimento;
+	public Conta conta;
+	public Agencia agencia;
 	
 	public Cliente(String n_nome, String n_cpf, String n_nasc, Agencia n_agencia) {
 		nome = n_nome;
@@ -37,7 +37,7 @@ public class Cliente {
 		return "Nome: "+pegarNome()+"\n"
 				+ "CPF: "+pegarCPF()+"\n"
 				+ "Data de nascimento: "+pegarDataNascimento()+"\n"
-				+ "Número da agência: "+pegarAgencia().numeroAgencia();
+				+ "NÃºmero da agÃªncia: "+pegarAgencia().numeroAgencia();
 				
 	}
 	
