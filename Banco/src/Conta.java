@@ -1,10 +1,10 @@
 
 public class Conta {
 
-	Cliente titular;
-	String numeroConta;
-	Double saldo;
-	Agencia agencia;
+	public Cliente titular;
+	private String numeroConta;
+	privaate Double saldo;
+	public Agencia agencia;
 	
 	public Conta(Cliente n_titular, String n_numero, Agencia n_agencia, Double n_saldo) {
 		
@@ -43,7 +43,7 @@ public class Conta {
 	public String toString() {
 		return "Titular: "+titular.pegarNome()+"\n"
 				+ "CPF: "+titular.pegarCPF()+"\n"
-				+ "Número da conta: "+numeroConta+"\n"
+				+ "NÃºmero da conta: "+numeroConta+"\n"
 				+ "Saldo: R$ "+saldo;	
 	}
 	
