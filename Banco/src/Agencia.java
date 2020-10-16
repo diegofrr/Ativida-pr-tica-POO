@@ -4,7 +4,7 @@ import java.util.Date;
 import javax.swing.JOptionPane;
 
 public class Agencia extends Banco {
-	int numeroAgencia;
+	private int numeroAgencia;
 	public ArrayList<Cliente> listaClientes = new ArrayList();
 	public ArrayList<Conta> listaContas = new ArrayList();
 
@@ -23,16 +23,16 @@ public class Agencia extends Banco {
 		
 		for(Cliente clientes : agencia.listaClientes) {
 			if(clientes.pegarCPF().equals(cpf)) {
-				return "J¡ EXISTE UMA CONTA COM ESTE CPF";
+				return "J√Å EXISTE UMA CONTA COM ESTE CPF";
 			}
 		}
 		
 		String dataNascimento = JOptionPane.showInputDialog("DATA DE NASCIMENTO DD/MM/AAAA");
-		String numeroConta = JOptionPane.showInputDialog("N⁄MERO DA CONTA");
+		String numeroConta = JOptionPane.showInputDialog("N√öMERO DA CONTA");
 
 		for (Conta contas : agencia.listaContas) {
 			if (contas.numeroConta().equals(numeroConta)) {
-				return "J¡ EXISTE UMA CONTA COM ESTE N⁄MERO!";
+				return "J√Å EXISTE UMA CONTA COM ESTE N√öMERO!";
 			}}
 			Cliente titular = new Cliente(nome, cpf, dataNascimento, agencia);
 			Conta n_conta = new Conta(titular, numeroConta, agencia, 0.0);
@@ -48,7 +48,7 @@ public class Agencia extends Banco {
 	}
 
 	public String toString() {
-		return "N∫ AG: " + numeroAgencia + "\n" + "QUANT. CLIENTES: " + listaClientes.size() + "\n" + "QUANT. CONTAS: "
+		return "N¬∫ AG: " + numeroAgencia + "\n" + "QUANT. CLIENTES: " + listaClientes.size() + "\n" + "QUANT. CONTAS: "
 				+ listaContas.size();
 	}
 
