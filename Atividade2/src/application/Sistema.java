@@ -60,11 +60,9 @@ public class Sistema {
 		for (Empregado _empregado : listaEmpregados) {
 			listaStr += _empregado.toString() + "\n\n";
 		}
-		
 		if(listaStr.equals("")) {
 			return "NENHUM EMPREGADO CADASTRADO!";
 		}
-		
 		return listaStr;
 	}
 
@@ -73,11 +71,9 @@ public class Sistema {
 		for (Fornecedor _fornecedor : listaFornecedores) {
 			listaStr += _fornecedor.toString() + "\n\n";
 		}
-		
 		if(listaStr.equals("")) {
 			return "NENHUM FORNECEDOR CADASTRADO!";
 		}
-		
 		return listaStr;
 	}
 	
@@ -86,11 +82,9 @@ public class Sistema {
 		for (Administrador _administrador : listaAdministradores) {
 			listaStr += _administrador.toString() + "\n\n";
 		}
-		
 		if(listaStr.equals("")) {
 			return "NENHUM ADMINISTRADOR CADASTRADO!";
 		}
-		
 		return listaStr;
 	}
 	
@@ -99,11 +93,9 @@ public class Sistema {
 		for (Vendedor _vendedor : listaVendedores) {
 			listaStr += _vendedor.toString() + "\n\n";
 		}
-		
 		if(listaStr.equals("")) {
 			return "NENHUM VENDEDOR CADASTRADO!";
 		}
-		
 		return listaStr;
 	}
 
