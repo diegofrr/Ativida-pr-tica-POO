@@ -31,19 +31,41 @@ public class Interface {
 
 					if (op.equals("1")) {
 						String listaEmpregados = sistema.listarEmpregados();
-						JOptionPane.showMessageDialog(null, listaEmpregados);
+						if(!listaEmpregados.equals("")) {
+							JOptionPane.showMessageDialog(null, listaEmpregados);
+						}else {
+							JOptionPane.showMessageDialog(null, "NENHUM EMPREGADO CADASTRADO!");
+						}
+						
 
 					} else if (op.equals("2")) {
 						String listaAdministradores = sistema.listarAdministradores();
-						JOptionPane.showMessageDialog(null, listaAdministradores);
+						if(!listaAdministradores.equals("")) {
+							JOptionPane.showMessageDialog(null, listaAdministradores);
+						}else {
+							JOptionPane.showMessageDialog(null, "NENHUM ADMINISTRADOR CADASTRADO!");
+						}
+						
 
 					} else if (op.equals("3")) {
 						String listaFornecedores = sistema.listarFornecedores();
-						JOptionPane.showMessageDialog(null, listaFornecedores);
+						if(!listaFornecedores.equals("")) {
+							JOptionPane.showMessageDialog(null, listaFornecedores);
+						}else {
+							JOptionPane.showMessageDialog(null, "NENHUM FORNECEDOR CADASTRADO!");
+						}
+						
+						
 
 					} else if (op.equals("4")) {
 						String listaVendedores = sistema.listarVendedores();
-						JOptionPane.showMessageDialog(null, listaVendedores);
+						
+						if(!listaVendedores.equals("")) {
+							JOptionPane.showMessageDialog(null, listaVendedores);
+						}else {
+							JOptionPane.showMessageDialog(null, "NENHUM VENDEDOR CADASTRADO!");
+						}
+						
 
 					} else if (op.equals("5")) {
 						break;
