@@ -56,45 +56,49 @@ public class Sistema {
 	}
 	
 	public String listarEmpregados() {
+		if(listaEmpregados.size() == 0) {
+			return "NENHUM EMPREGADO CADASTRADO";
+		}
 		String listaStr = "";
 		for (Empregado _empregado : listaEmpregados) {
 			listaStr += _empregado.toString() + "\n\n";
 		}
-		if(listaStr.equals("")) {
-			return "NENHUM EMPREGADO CADASTRADO!";
-		}
 		return listaStr;
 	}
 
+	
 	public String listarFornecedores() {
+		if(listaFornecedores.size() == 0) {
+			return "NENHUM FORNECEDOR CADASTRADO";
+		}	
 		String listaStr = "";
 		for (Fornecedor _fornecedor : listaFornecedores) {
 			listaStr += _fornecedor.toString() + "\n\n";
 		}
-		if(listaStr.equals("")) {
-			return "NENHUM FORNECEDOR CADASTRADO!";
-		}
 		return listaStr;
 	}
 	
+	
 	public String listarAdministradores() {
+		
+		if(listaAdministradores.size() == 0) {
+			return "NENHUM ADMINISTRADOR CADASTRADO";
+		}
 		String listaStr = "";
 		for (Administrador _administrador : listaAdministradores) {
 			listaStr += _administrador.toString() + "\n\n";
 		}
-		if(listaStr.equals("")) {
-			return "NENHUM ADMINISTRADOR CADASTRADO!";
-		}
 		return listaStr;
 	}
 	
+	
 	public String listarVendedores() {
+		if(listaVendedores.size() == 0) {
+			return "NENHUM VENDEDOR CADASTRADO!";
+		}
 		String listaStr = "";
 		for (Vendedor _vendedor : listaVendedores) {
 			listaStr += _vendedor.toString() + "\n\n";
-		}
-		if(listaStr.equals("")) {
-			return "NENHUM VENDEDOR CADASTRADO!";
 		}
 		return listaStr;
 	}

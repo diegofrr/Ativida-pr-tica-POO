@@ -26,7 +26,7 @@ public class Administrador extends Empregado{
 		return "Nome: "+getNome() + "\n" +
 				"Nome: "+getEndereco() + "\n" +
 				"Telefone: "+getTelefone() + "\n" +
-				"Salário: "+calcularSalario();
+				"Salário: R$ "+calcularSalario();
 	}
 	
 	

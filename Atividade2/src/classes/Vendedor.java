@@ -36,9 +36,9 @@ public class Vendedor extends Empregado {
 		return "Nome: "+getNome() + "\n" +
 				"Nome: "+getEndereco() + "\n" +
 				"Telefone: "+getTelefone() + "\n" +
-				"Comissão: "+getComissao() + "\n" +
-				"Vendas: "+getValorVendas() + "\n" +
-				"Salário: "+calcularSalario();
+				"Comissão: R$ "+getComissao() + "\n" +
+				"Vendas: R$ "+getValorVendas() + "\n" +
+				"Salário: R$ "+calcularSalario();
 	}
 
 	

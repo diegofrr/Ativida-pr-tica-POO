@@ -22,6 +22,6 @@ public class Empregado extends Pessoa {
 		return "Nome: "+getNome() + "\n" +
 				"Nome: "+getEndereco() + "\n" +
 				"Telefone: "+getTelefone() + "\n" +
-				"Salário: "+getSalario();
+				"Salário: R$ "+getSalario();
 	}
 }

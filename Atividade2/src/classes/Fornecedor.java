@@ -36,8 +36,8 @@ public class Fornecedor extends Pessoa {
 		return "Nome: "+getNome() + "\n" +
 				"Nome: "+getEndereco() + "\n" +
 				"Telefone: "+getTelefone() + "\n" +
-				"Crédito: "+getValorCredito() + "\n" +
-				"Dívida: "+getValorDivida();
+				"Crédito: R$ "+getValorCredito() + "\n" +
+				"Dívida: R$ "+getValorDivida();
 	}
 	
 }
