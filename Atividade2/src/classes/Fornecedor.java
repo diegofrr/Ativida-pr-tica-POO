@@ -40,5 +40,4 @@ public class Fornecedor extends Pessoa {
 				"Dívida: "+getValorDivida();
 	}
 	
-
 }

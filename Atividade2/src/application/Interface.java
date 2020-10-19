@@ -16,7 +16,7 @@ public class Interface {
 					"4. NOVO VENDEDOR \n" + 
 					"5. LISTAR PESSOAS \n" + 
 					"6. SAIR");
-
+			
 			if (opcao.equals("1")) {
 				sistema.novoEmpregado();
 

@@ -24,5 +24,4 @@ public class Empregado extends Pessoa {
 				"Telefone: "+getTelefone() + "\n" +
 				"Salário: "+getSalario();
 	}
-	
 }

@@ -29,4 +29,5 @@ public class Administrador extends Empregado{
 				"Salário: "+calcularSalario();
 	}
 	
+	
 }

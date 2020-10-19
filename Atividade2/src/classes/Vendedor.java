@@ -41,4 +41,5 @@ public class Vendedor extends Empregado {
 				"Salário: "+calcularSalario();
 	}
 
+	
 }
