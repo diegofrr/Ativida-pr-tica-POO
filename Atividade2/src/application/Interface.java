@@ -6,16 +6,10 @@ public class Interface {
 
 	public static void main(String[] args) {
 		Sistema sistema = new Sistema();
+		Menus menu = new Menus();
 
 		while (true) {
-			String opcao = JOptionPane.showInputDialog(
-					"MENU \n" + 
-					"1. NOVO EMPREGADO \n" + 
-					"2. NOVO ADMINISTRADOR \n" + 
-					"3. NOVO FORNECEDOR \n" + 
-					"4. NOVO VENDEDOR \n" + 
-					"5. LISTAR PESSOAS \n" + 
-					"6. SAIR");
+			String opcao = menu.menuPrincipal();
 			
 			if (opcao.equals("1")) {
 				sistema.novoEmpregado();
@@ -33,12 +27,7 @@ public class Interface {
 
 				while (true) {
 
-					String op = JOptionPane.showInputDialog(
-							"1. LISTAR EMPREGADOS \n" + 
-							"2. LISTAR ADMINISTRADOR \n" + 
-							"3. LISTAR FORNECEDORES \n" + 
-							"4. LISTAR VENDEDORES \n" + 
-							"5. VOLTAR \n");
+					String op = menu.menuListas();
 
 					if (op.equals("1")) {
 						String listaEmpregados = sistema.listarEmpregados();
