@@ -15,7 +15,7 @@ public class Menus {
 	return opcao;
 	
 	}
-	
+
 	public String menuListas() {
 		String opcao = JOptionPane.showInputDialog(
 				"1. LISTAR EMPREGADOS \n" + 

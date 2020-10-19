@@ -10,7 +10,7 @@ public class Interface {
 
 		while (true) {
 			String opcao = menu.menuPrincipal();
-			
+
 			if (opcao.equals("1")) {
 				sistema.novoEmpregado();
 
