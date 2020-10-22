@@ -10,6 +10,10 @@ public class Administrador extends Empregado{
 		
 	}
 	
+	public Administrador() {
+		ajudaDeCusto = 0;
+	}
+	
 	public double getAjudaDeCusto() {
 		return ajudaDeCusto;
 	}

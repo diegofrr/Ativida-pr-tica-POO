@@ -80,7 +80,6 @@ public class Sistema {
 	
 	
 	public String listarAdministradores() {
-		
 		if(listaAdministradores.size() == 0) {
 			return "NENHUM ADMINISTRADOR CADASTRADO";
 		}
