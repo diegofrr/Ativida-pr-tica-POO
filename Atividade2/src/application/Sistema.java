@@ -9,11 +9,10 @@ import classes.Vendedor;
 
 public class Sistema {
 	
-	private ArrayList<Empregado> listaEmpregados = new ArrayList();
-	private ArrayList<Fornecedor> listaFornecedores = new ArrayList();
-	private ArrayList<Administrador> listaAdministradores = new ArrayList();
-	private ArrayList<Vendedor> listaVendedores = new ArrayList();
-	
+	private ArrayList<Empregado> listaEmpregados = new ArrayList<Empregado>();
+	private ArrayList<Fornecedor> listaFornecedores = new ArrayList<Fornecedor>();
+	private ArrayList<Administrador> listaAdministradores = new ArrayList<Administrador>();
+	private ArrayList<Vendedor> listaVendedores = new ArrayList<Vendedor>();
 	
 	public Pessoa novaPessoa() {
 		String nome = JOptionPane.showInputDialog("NOME");
