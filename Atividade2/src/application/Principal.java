@@ -2,7 +2,7 @@ package application;
 
 import javax.swing.JOptionPane;
 
-public class Interface {
+public class Principal {
 
 	public static void main(String[] args) {
 		Sistema sistema = new Sistema();
