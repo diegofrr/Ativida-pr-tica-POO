@@ -11,6 +11,11 @@ public class Vendedor extends Empregado {
 		this.comissao = _comissao;
 
 	}
+	
+	public Vendedor() {
+		this.valorVendas = 0;
+		this.comissao = 0;
+	}
 
 	public double getValorVendas() {
 		return valorVendas;

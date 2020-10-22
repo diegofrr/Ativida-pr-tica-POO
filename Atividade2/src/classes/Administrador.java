@@ -9,7 +9,7 @@ public class Administrador extends Empregado{
 		this.ajudaDeCusto = _ajudaDeCusto;
 		
 	}
-
+	
 	public double getAjudaDeCusto() {
 		return ajudaDeCusto;
 	}

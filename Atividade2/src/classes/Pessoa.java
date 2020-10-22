@@ -14,6 +14,12 @@ public class Pessoa {
 		
 	}
 	
+	public Pessoa() {
+		this.nome = "";
+		this.endereco = "";
+		this.telefone = "";
+	}
+	
 	public String getNome() {
 		return nome;
 	}

@@ -12,6 +12,11 @@ public class Fornecedor extends Pessoa {
 		
 	}
 	
+	public Fornecedor() {
+		this.valorCredito = 0;
+		this.valorDivida = 0;
+	}
+	
 	public double getValorCredito() {
 		return valorCredito;
 	}

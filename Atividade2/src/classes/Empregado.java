@@ -8,6 +8,10 @@ public class Empregado extends Pessoa {
 		super(_nome, _endereco, _telefone);
 		this.salario = _salario;
 	}
+	
+	public Empregado() {
+		this.salario = 0;
+	}
 
 	public double getSalario() {
 		return salario;
