@@ -16,7 +16,7 @@ public class Fornecedor extends Pessoa {
 		return valorCredito;
 	}
 	
-	public void setValorCredito(Double valor) {
+	public void setValorCredito(double valor) {
 		valorCredito = valor;
 	}
 	
@@ -24,7 +24,7 @@ public class Fornecedor extends Pessoa {
 		return valorDivida;
 	}
 	
-	public void setValorDivida(Double valor) {
+	public void setValorDivida(double valor) {
 		valorDivida = valor;
 	}
 	

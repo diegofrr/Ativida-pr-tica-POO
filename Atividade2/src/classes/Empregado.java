@@ -13,7 +13,7 @@ public class Empregado extends Pessoa {
 		return salario;
 	}
 
-	public void setSalario(Double salario) {
+	public void setSalario(double salario) {
 		this.salario = salario;
 	}
 	
