@@ -14,7 +14,7 @@ public class Administrador extends Empregado{
 		return ajudaDeCusto;
 	}
 
-	public void setAjudaDeCusto(Double ajudaDeCusto) {
+	public void setAjudaDeCusto(double ajudaDeCusto) {
 		this.ajudaDeCusto = ajudaDeCusto;
 	}
 	
