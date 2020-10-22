@@ -100,5 +100,12 @@ public class Sistema {
 		}
 		return listaStr;
 	}
+	
+	public void limparDados() {
+		listaEmpregados.clear();
+		listaFornecedores.clear();
+		listaAdministradores.clear();
+		listaVendedores.clear();
+	}
 
 }

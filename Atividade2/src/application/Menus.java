@@ -11,7 +11,8 @@ public class Menus {
 				"3. NOVO FORNECEDOR \n" + 
 				"4. NOVO VENDEDOR \n" + 
 				"5. LISTAR PESSOAS \n" + 
-				"6. SAIR");
+				"6. LIMPAR DADOS \n" + 
+				"7. SAIR");
 	return opcao;
 	
 	}

@@ -51,6 +51,11 @@ public class Principal {
 				}
 
 			} else if (opcao.equals("6")) {
+				sistema.limparDados();
+				JOptionPane.showMessageDialog(null, "TODOS OS DADOS FORAM REMOVIDOS!");
+			}
+			
+			else if (opcao.equals("7")) {
 				break;
 
 			} else {
